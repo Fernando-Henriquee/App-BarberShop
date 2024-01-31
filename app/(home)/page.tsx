@@ -36,7 +36,7 @@ export default  async function Home() {
             <div className="mt-6">
             <h2 className="px-5 text-xs mb-3 font-bold uppercase text-gray-400">Recomendados</h2>
 
-                <div className="flex px-5 gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+                <div className="flex px-2 gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
                     {barbershops.map((barbershop) => (
                         <BarberShopItem key={barbershop.id} barbershop={barbershop} />
                     ))}

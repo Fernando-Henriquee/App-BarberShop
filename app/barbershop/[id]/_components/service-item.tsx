@@ -110,7 +110,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
       const timeHour = Number(time.split(":")[0]);
       const timeMinutes = Number(time.split(":")[1]);
 
-      const booking = dayBookings.find((booking) => {
+      const booking = dayBookings?.find((booking) => {
         const bookingHour = booking.date.getHours();
         const bookingMinutes = booking.date.getMinutes();
 
